@@ -1,0 +1,77 @@
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  color: #282c34;
+  padding: 30px;
+  border-radius: 12px;
+  width: 350px;
+  margin: 50px auto;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  font-family: 'Arial', sans-serif;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.step-btn {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.step-btn:hover {
+  background-color: crimson;
+  transform: translateY(-2px);
+  border: none;
+}
+
+.heading {
+  font-size: 20px;
+  font-weight: bold;
+  color: crimson;
+}
+
+p {
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+p span:first-child {
+  font-weight: bold;
+  color: black;
+}
+
+p span:last-child {
+  color: crimson;
+  font-weight: bold;
+}
+
+@media (max-width: 400px) {
+  .counter-container {
+    width: 90%;
+    padding: 20px;
+  }
+  
+  .step-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+  
+  .heading {
+    font-size: 18px;
+  }
+}
